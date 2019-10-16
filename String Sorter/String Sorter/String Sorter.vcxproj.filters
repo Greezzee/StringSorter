@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{80aef04a-d999-4ff3-b33f-85c65643ea2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FileSort.cpp">
@@ -29,5 +32,13 @@
     <ClInclude Include="Text.h">
       <Filter>Файлы ресурсов</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="in.txt">
+      <Filter>Text</Filter>
+    </Text>
+    <Text Include="out.txt">
+      <Filter>Text</Filter>
+    </Text>
   </ItemGroup>
 </Project>

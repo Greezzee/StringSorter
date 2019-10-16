@@ -47,6 +47,9 @@ int AlphaCompareFromEnd(const void* string1, const void* string2)
 	i = strlen(str1) - 1;
 	j = strlen(str2) - 1;
 
+	while (isspace(str1[i]) && i > 0) i--;
+	while (isspace(str2[j]) && j > 0) j--;
+
 	for (i, j; i >= 0 && j >= 0; i--, j--)
 	{
 		if (str1[i] > str2[j]) return 1;
@@ -76,8 +79,8 @@ int AlphaCompareFromEndIgnorePunc(const void* string1, const void* string2)
 	i = strlen(str1) - 1;
 	j = strlen(str2) - 1;
 
-	while (ispunct(str1[i]) && i > 0) i--;
-	while (ispunct(str2[j]) && j > 0) j--;
+	while ((ispunct(str1[i]) || isspace(str1[i])) && i > 0) i--;
+	while ((ispunct(str2[j]) || isspace(str2[j])) && j > 0) j--;
 
 	for (i, j; i >= 0 && j >= 0; i--, j--)
 	{

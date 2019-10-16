@@ -6,7 +6,7 @@
  *
  * @return file size in bytes (count of chars)
  ******************************************************/
-long getFileSize(FILE* file)
+long GetFileSize(FILE* file)
 {
 	fseek(file, 0, SEEK_END);
 	long FileSize = ftell(file);
@@ -38,7 +38,7 @@ char* ReadFile(const char* inFileName, long* stringsCount)
 		return NULL;
 	}
 
-	int fileSize = getFileSize(inFile);
+	int fileSize = GetFileSize(inFile);
 	char* text = (char*)calloc(fileSize, sizeof(char));
 	if (text == NULL)
 	{

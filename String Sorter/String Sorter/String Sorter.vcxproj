@@ -130,6 +130,10 @@
     <ClInclude Include="StringCompare.h" />
     <ClInclude Include="Text.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="in.txt" />
+    <Text Include="out.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

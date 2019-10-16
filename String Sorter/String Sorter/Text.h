@@ -17,13 +17,13 @@ long SplitToStrings(char* text, char** strings, const char terminator, bool spac
 	assert(text != NULL);
 	assert(strings != NULL);
 	strings[0] = text;
-	long StringsCount = 1;
+	long stringsCount = 1;
 	long strLenght = 0;
 	for (int i = 0; text[i] != '\0'; i++)
 	{
 		if (spaceIgnore && isspace(text[i]) && strLenght == 0) {
 			text[i] = '\0';
-			if (StringsCount > 0) strings[StringsCount - 1]++;
+			if (stringsCount > 0) strings[stringsCount - 1]++;
 		}
 
 		else if (text[i] == '\r') text[i] = ' ';
@@ -31,11 +31,11 @@ long SplitToStrings(char* text, char** strings, const char terminator, bool spac
 		else if (text[i] == terminator)
 		{
 			text[i] = '\0';
-			strings[StringsCount] = text + i + 1;
-			StringsCount++;
+			strings[stringsCount] = text + i + 1;
+			stringsCount++;
 			strLenght = 0;
 		}
 		else strLenght++;
 	}
-	return StringsCount - 1;
+	return stringsCount - 1;
 }
