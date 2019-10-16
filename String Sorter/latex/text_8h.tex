@@ -1,0 +1,34 @@
+\hypertarget{text_8h}{}\doxysection{Sorting strings/text.h File Reference}
+\label{text_8h}\index{Sorting strings/text.h@{Sorting strings/text.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{text_8h_a069147f3fd8274deb88cc5eaf652de0c}{Split\+To\+Strings}} (char $\ast$text, char $\ast$$\ast$strings, char terminator)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{text_8h_a069147f3fd8274deb88cc5eaf652de0c}\label{text_8h_a069147f3fd8274deb88cc5eaf652de0c}} 
+\index{text.h@{text.h}!SplitToStrings@{SplitToStrings}}
+\index{SplitToStrings@{SplitToStrings}!text.h@{text.h}}
+\doxysubsubsection{\texorpdfstring{SplitToStrings()}{SplitToStrings()}}
+{\footnotesize\ttfamily long Split\+To\+Strings (\begin{DoxyParamCaption}\item[{char $\ast$}]{text,  }\item[{char $\ast$$\ast$}]{strings,  }\item[{char}]{terminator }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Split one string into several with char terminator
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em text} & Input string to split. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Array} & for splitted strings, should have enought size \\
+\hline
+\mbox{\texttt{ in}}  & {\em terminator} & Char by whitch strings will split\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count of strings after split
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+all terminators in input string will replaced by \textquotesingle{}\textbackslash{}0\textquotesingle{} 
+\end{DoxyNote}

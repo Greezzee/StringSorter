@@ -1,0 +1,56 @@
+\hypertarget{_file_i_o_8h}{}\doxysection{Sorting strings/\+File\+IO.h File Reference}
+\label{_file_i_o_8h}\index{Sorting strings/FileIO.h@{Sorting strings/FileIO.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{_file_i_o_8h_a693423dea56c3b5cf3825001437b58a8}{get\+File\+Size}} (F\+I\+LE $\ast$file)
+\item 
+char $\ast$ \mbox{\hyperlink{_file_i_o_8h_adcd8b6683eb167510bf457f5cd84818e}{read\+File}} (const char $\ast$In\+File\+Name, long $\ast$strings\+Count)
+\item 
+int \mbox{\hyperlink{_file_i_o_8h_a05d78b73bd165a3d4d9bf0c6e8692b95}{write\+File}} (const char $\ast$Out\+File\+Name, const char $\ast$$\ast$text, long strings\+Count)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_file_i_o_8h_a693423dea56c3b5cf3825001437b58a8}\label{_file_i_o_8h_a693423dea56c3b5cf3825001437b58a8}} 
+\index{FileIO.h@{FileIO.h}!getFileSize@{getFileSize}}
+\index{getFileSize@{getFileSize}!FileIO.h@{FileIO.h}}
+\doxysubsubsection{\texorpdfstring{getFileSize()}{getFileSize()}}
+{\footnotesize\ttfamily long get\+File\+Size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Get size of the file in bytes
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & File to find size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file size in bytes (count of chars) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_i_o_8h_adcd8b6683eb167510bf457f5cd84818e}\label{_file_i_o_8h_adcd8b6683eb167510bf457f5cd84818e}} 
+\index{FileIO.h@{FileIO.h}!readFile@{readFile}}
+\index{readFile@{readFile}!FileIO.h@{FileIO.h}}
+\doxysubsubsection{\texorpdfstring{readFile()}{readFile()}}
+{\footnotesize\ttfamily char$\ast$ read\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{In\+File\+Name,  }\item[{long $\ast$}]{strings\+Count }\end{DoxyParamCaption})}
+
+\DoxyHorRuler
+ Read information from the file
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em In\+File\+Name} & Name/path of file with input information \\
+\hline
+\mbox{\texttt{ out}}  & {\em strings\+Count} & number of strings in file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All file\textquotesingle{}s text in one string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_file_i_o_8h_a05d78b73bd165a3d4d9bf0c6e8692b95}\label{_file_i_o_8h_a05d78b73bd165a3d4d9bf0c6e8692b95}} 
+\index{FileIO.h@{FileIO.h}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!FileIO.h@{FileIO.h}}
+\doxysubsubsection{\texorpdfstring{writeFile()}{writeFile()}}
+{\footnotesize\ttfamily int write\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Out\+File\+Name,  }\item[{const char $\ast$$\ast$}]{text,  }\item[{long}]{strings\+Count }\end{DoxyParamCaption})}
+
